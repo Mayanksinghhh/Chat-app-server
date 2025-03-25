@@ -35,6 +35,7 @@ if(parsedData.type === 'chat'){
 }
 
 if(parsedData.type === 'typing'){
+   
   const currentUserRoom = allSockets.find((x)=>x.socket==socket)!.room
 
   allSockets.forEach((x)=>{
@@ -45,4 +46,6 @@ if(parsedData.type === 'typing'){
   })
 }
 });
+
+// final git pushing
 });
